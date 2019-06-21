@@ -1,0 +1,17 @@
+version: '2'
+services:
+    saeon_geoserver:
+        build:
+            context: ./geoserver-docker
+            dockerfile: Dockerfile
+
+        container_name: saeon_geoserver
+
+        volumes:
+            #- ./webapps/:/usr/local/tomcat/webapps/
+            - ./geoserver-data/:/opt/
+
+        ports:
+            - "8080:8080"       
+        
+        #restart: always
