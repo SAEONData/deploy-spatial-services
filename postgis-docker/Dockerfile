@@ -26,17 +26,17 @@ RUN apt-get update \
  #libpq-dev \
  #python-setuptools \
  #python-requests \
-&& echo "deb [arch=amd64] http://packages.2ndquadrant.com/pglogical/apt/ `lsb_release -cs`-2ndquadrant main" >/etc/apt/sources.list.d/2ndquadrant.list \
-&& wget --quiet -O - http://packages.2ndquadrant.com/pglogical/apt/AA7A6805.asc | apt-key add - \
-&& apt-get update \
-&& apt-get install -y --no-install-recommends postgresql-$PG_MAJOR-pglogical \
-&& sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
-&& sed -i -e 's/# en_ZA.UTF-8 UTF-8/en_ZA.UTF-8 UTF-8/' /etc/locale.gen \
-&& echo 'LANG="en_ZA.UTF-8"'>/etc/default/locale \
-&& dpkg-reconfigure locales \
-&& update-locale LANG=en_ZA.UTF-8 \
-&& dpkg-reconfigure locales \
-&& rm -rf /var/lib/apt/lists/*
+RUN echo "deb [arch=amd64] http://packages.2ndquadrant.com/pglogical/apt/ `lsb_release -cs`-2ndquadrant main" >/etc/apt/sources.list.d/2ndquadrant.list \
+RUN wget --quiet -O - http://packages.2ndquadrant.com/pglogical/apt/AA7A6805.asc | apt-key add - \
+RUN apt-get update \
+RUN apt-get install -y --no-install-recommends postgresql-$PG_MAJOR-pglogical \
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
+RUN && sed -i -e 's/# en_ZA.UTF-8 UTF-8/en_ZA.UTF-8 UTF-8/' /etc/locale.gen \
+RUN echo 'LANG="en_ZA.UTF-8"'>/etc/default/locale \
+RUN dpkg-reconfigure locales \
+RUN update-locale LANG=en_ZA.UTF-8 \
+RUN dpkg-reconfigure locales \
+RUN rm -rf /var/lib/apt/lists/*
 
 #RUN ls && cd /var/ && git clone git://github.com/Kozea/Multicorn.git && cd Multicorn && make && make install
 
