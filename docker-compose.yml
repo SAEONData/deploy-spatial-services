@@ -16,7 +16,10 @@ services:
         
         #restart: always
     postgres:
-        image: postgres:9.6
+        #image: postgres:9.6
+        build:
+            context: ./postgis-docker
+            dockerfile: Dockerfile
         container_name: saeon_postgres
         ports:
             - "5432:5432"
