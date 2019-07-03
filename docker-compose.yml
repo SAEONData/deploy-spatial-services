@@ -27,5 +27,6 @@ services:
         volumes:
             - ./data/:/var/lib/postgresql/data
             - /mnt/media/postgres_dump_app01/2019_MIGRATION/:/opt/
+            - ./utils/:/scripts/
         #restart: always
 

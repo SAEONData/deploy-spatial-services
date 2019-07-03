@@ -43,6 +43,7 @@ RUN rm -rf /var/lib/apt/lists/*
 
 # Optional entrypoint script to set UID/GID of postgres user
 ADD set-postgres-uid.sh /set-postgres-uid.sh
+RUN mkdir /scripts/
 #COPY scripts /tmp/
 #RUN ls /tmp && ls /tmp 
 #RUN cd /tmp/google-ft-fdw/ && python setup.py install
