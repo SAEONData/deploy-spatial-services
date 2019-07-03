@@ -8,10 +8,12 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV LANG en_ZA.UTF-8
 ENV LANGUAGE en_ZA.UTF-8
 
-RUN apt-get update \
-&& apt-get install -y --no-install-recommends \
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends \
  postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
- postgis-$POSTGIS_MAJOR \
+ postgis-$POSTGIS_MAJOR 
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends\ 
  locales \
  rsyslog \
  #curl \
@@ -23,15 +25,14 @@ RUN apt-get update \
  postgresql-server-dev-9.6 \
  postgresql-common \
  #python-psycopg2 \
- #libpq-dev \
- #python-setuptools \
+ libpq-dev  #python-setuptools 
  #python-requests \
-RUN echo "deb [arch=amd64] http://packages.2ndquadrant.com/pglogical/apt/ `lsb_release -cs`-2ndquadrant main" >/etc/apt/sources.list.d/2ndquadrant.list \
-RUN wget --quiet -O - http://packages.2ndquadrant.com/pglogical/apt/AA7A6805.asc | apt-key add - 
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends postgresql-$PG_MAJOR-pglogical 
+#RUN echo "deb [arch=amd64] http://packages.2ndquadrant.com/pglogical/apt/ `lsb_release -cs`-2ndquadrant main" >/etc/apt/sources.list.d/2ndquadrant.list \
+#RUN wget --quiet -O - http://packages.2ndquadrant.com/pglogical/apt/AA7A6805.asc | apt-key add - 
+#RUN apt-get update
+#RUN apt-get install -y --no-install-recommends postgresql-$PG_MAJOR-pglogical 
 RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen 
-RUN && sed -i -e 's/# en_ZA.UTF-8 UTF-8/en_ZA.UTF-8 UTF-8/' /etc/locale.gen 
+RUN sed -i -e 's/# en_ZA.UTF-8 UTF-8/en_ZA.UTF-8 UTF-8/' /etc/locale.gen 
 RUN echo 'LANG="en_ZA.UTF-8"'>/etc/default/locale 
 RUN dpkg-reconfigure locales 
 RUN update-locale LANG=en_ZA.UTF-8 
