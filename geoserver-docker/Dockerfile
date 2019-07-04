@@ -18,6 +18,8 @@ RUN cd /tmp/gsplugs/ && ls
 RUN unzip /tmp/gsplugs/geoserver-2.10.1-netcdf-plugin.zip -d /tmp/gs/warunpack/WEB-INF/lib/
 RUN unzip /tmp/gsplugs/geoserver-2.10.1-wps-plugin.zip -d /tmp/gs/warunpack/WEB-INF/lib/
 
+COPY web.xml  /tmp/gs/warunpack/WEB-INF/
+
 RUN cd /tmp/gs/warunpack/ && jar -cvf ../geoserver.repack.war *
 
 RUN touch /usr/local/tomcat/webapps/tmp.txt
