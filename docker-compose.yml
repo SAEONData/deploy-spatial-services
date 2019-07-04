@@ -7,12 +7,23 @@ services:
 
         container_name: saeon_geoserver
 
+        environment:
+            - MINMEM=512M
+            - MAXMEM=2G
+
         volumes:
             #- ./webapps/:/usr/local/tomcat/webapps/
             - ./geoserver-data/:/opt/
+            - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
 
         ports:
-            - "8080:8080"       
+            - "8080:8080"
+
+        links:
+            - postgres
+
+        depends_on:
+            - postgres
         
         #restart: always
     postgres:
