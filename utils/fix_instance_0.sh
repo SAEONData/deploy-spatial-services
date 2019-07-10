@@ -14,8 +14,14 @@ do
 done
 
 
+grep -R "file:INGC" $GEOSERVER_DATA_DIR/workspaces/ | cut -d ":" -f1 | while read -r item
+do
+  sed -i "s/file:INGC\/INGC/file:data\/INGC/g" $item
+  echo $item
+done
 
 
+# <entry key="url">file:INGC/INGC/Beira_elevation.shp</entry>
 
 #<entry key="host">localhost</entry>
 
