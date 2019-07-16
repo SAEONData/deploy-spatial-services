@@ -1,0 +1,17 @@
+Instance 0:
+bash utils/convert_file_paths.sh geoserver-data/data_dir/
+bash utils/fix_instance_0.sh geoserver-data/data_dir/
+
+Instance 1:
+bash utils/convert_file_paths.sh geoserver-data/data_dir/
+bash utils/fix_instance_0.sh geoserver-data/data_dir/
+bash utils/convert_filepaths_case.sh geoserver-data/data_dir/coverages/GEOSS
+
+Instance 2:
+bash utils/convert_file_paths.sh geoserver-data/data_dir/
+bash utils/fix_instance_0.sh geoserver-data/data_dir/
+
+Instance 3:
+bash utils/fix_instance_0.sh geoserver-data/data_dir/
+bash utils/convert_filepaths_case.sh geoserver-data/data_dir/coverages/CFG/
+bash utils/fix_instance_3.sh geoserver-data/data_dir/

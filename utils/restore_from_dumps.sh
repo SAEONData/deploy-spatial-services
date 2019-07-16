@@ -2,8 +2,8 @@
 INPUT_DUMPS_DIR=/opt/2019/07/02
 POSTGIS_RESTORE=/usr/share/postgresql/9.5/contrib/postgis-2.3/postgis_restore.pl
 
-for dump_file in `ls $INPUT_DUMPS_DIR/*.compressed`
-#for dump_file in `ls $INPUT_DUMPS_DIR/-GEOSS.compressed`
+#for dump_file in `ls $INPUT_DUMPS_DIR/*.compressed`
+for dump_file in `ls $INPUT_DUMPS_DIR/-CFG.compressed`
 do
     db_name=$(basename $dump_file | cut -d '.' -f1 | cut -d '-' -f2)
     echo "creating $db_name" &>> /scripts/restore.log
@@ -32,6 +32,8 @@ psql -U postgres -d GEOSS -c "$SQL"
 SQL=$(echo $SQL | sed "s/SARVA/BGIS/g")
 echo $SQL
 psql -U postgres -d SANBI -c "$SQL"
+SQL=$(echo $SQL | sed "s/BGIS/beeh/g")
+psql -U postgres -d BEEH -c "$SQL"
 
 
 #    1  find . | grep postgis_restore
