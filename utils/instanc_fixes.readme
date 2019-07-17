@@ -15,3 +15,6 @@ Instance 3:
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
 bash utils/convert_filepaths_case.sh geoserver-data/data_dir/coverages/CFG/
 bash utils/fix_instance_3.sh geoserver-data/data_dir/
+
+Instance 4:
+bash utils/fix_instance_4.sh geoserver-data/data_dir/
