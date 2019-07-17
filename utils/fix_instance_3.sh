@@ -6,3 +6,6 @@ do
   sed -i "s/CGS/FORESTS/g" $item
   echo "$item"
 done
+
+sed -i "s/CFG/cfg/g" $GEOSERVER_DATA_DIR/workspaces/CGS/saghos_nickel/coveragestore.xml
+
