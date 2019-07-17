@@ -18,3 +18,8 @@ bash utils/fix_instance_3.sh geoserver-data/data_dir/
 
 Instance 4:
 bash utils/fix_instance_4.sh geoserver-data/data_dir/
+
+
+Instance 7:
+bash utils/fix_instance_0.sh geoserver-data/data_dir/
+bash utils/fix_instance_7.sh geoserver-data/data_dir/
