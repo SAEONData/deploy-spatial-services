@@ -6,3 +6,22 @@ Instance4:
 http://192.168.110.101:8080/geoserver/DEA_CARBON_II/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_CARBON_II:LADA_South_Africa_Land_Use_DAFF_Apr2016&styles=&bbox=16.05480847174759,-34.877628162777484,33.49846888410278,-21.986412466542838&width=768&height=567&srs=EPSG:4326&format=application/openlayers
 ERROR [geotools.rendering] - 
 java.nio.BufferUnderflowException
+
+Instance 5:
+ALSO EXIST IN APP01
+
+Meso_pop_income_education_LL	BEA:Meso_pop_income_education_LL
+?
+/mnt/media/geoservers_app01/Instance5Bkp/data_dir/data/BEA_/WP02/Meso_pop_income_education_LL.shp
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE ServiceExceptionReport SYSTEM "http://192.168.110.101:8080/geoserver/schemas/wms/1.1.1/WMS_exception_1_1_1.dtd"> <ServiceExceptionReport version="1.1.1" >   <ServiceException>
+      The requested Style can not be used with this layer.  The style specifies an attribute of Basic_demo and the layer is: BEA:Meso_pop_income_education_LL
+</ServiceException></ServiceExceptionReport>
+
+Sugarcane - Field residue (t/a)	WP06:MESO_SCN
+/mnt/media/geoservers_app01/Instance5Bkp/data_dir/workspaces/WP06/WP06_07_SUGAR/datastore.xml
+?
+java.io.IOException: No such resource: MESO_SCN.sld
+No such resource: MESO_SCN.sld
+
+
+

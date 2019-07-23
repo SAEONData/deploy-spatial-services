@@ -14,7 +14,10 @@ services:
         volumes:
             #- ./webapps/:/usr/local/tomcat/webapps/
             - ./geoserver-data/:/opt/
+            #- /mnt/media/geoservers_app01/Instance5Bkp/:/opt/
+
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
+            - ./geoserver-logs/:/usr/local/tomcat/logs/
 
         ports:
             - "8080:8080"

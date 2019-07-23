@@ -19,7 +19,23 @@ bash utils/fix_instance_3.sh geoserver-data/data_dir/
 Instance 4:
 bash utils/fix_instance_4.sh geoserver-data/data_dir/
 
+Instance 5:
+bash utils/convert_file_paths.sh geoserver-data/data_dir/
+bash utils/fix_instance_0.sh geoserver-data/data_dir/
+bash utils/fix_instance_5.sh geoserver-data/data_dir/
+
+Can this be removed? (windows snapshots?)
+362G	/mnt/media/geoservers_app01/Instance5Bkp/data_dir/dirisa
+
+
 
 Instance 7:
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
 bash utils/fix_instance_7.sh geoserver-data/data_dir/
+
+Instance 8:
+empty?
+
+Instance 9:
+No fixes necessary
+
