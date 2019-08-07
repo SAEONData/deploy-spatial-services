@@ -32,8 +32,10 @@ manually edit below to point directly to workspace again
 
 Instance 3:
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
-bash utils/convert_filepaths_case.sh geoserver-data/data_dir/coverages/CFG/
+bash utils/convert_filepaths_case.sh geoserver-data/data_dir/coverages/CFG/ @note: do on linux fs, windows fs cant handle different cases
 bash utils/fix_instance_3.sh geoserver-data/data_dir/
+bash utils/convert_file_locations.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_3/
+
 
 Instance 4:
 bash utils/fix_instance_4.sh geoserver-data/data_dir/
