@@ -1,11 +1,11 @@
 version: '2'
 services:
-    saeon_geoserver:
+    saeon_geoserver_0:
         build:
             context: ./geoserver-docker
             dockerfile: Dockerfile
 
-        container_name: saeon_geoserver
+        container_name: saeon_geoserver_0
 
         environment:
             - MINMEM=512M
@@ -13,34 +13,17 @@ services:
 
         volumes:
             #- ./webapps/:/usr/local/tomcat/webapps/
-            - ./geoserver-data/:/opt/
+            #- ./geoserver-data/:/opt/
             #- /mnt/media/geoservers_app01/Instance5Bkp/:/opt/
 
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/:/usr/local/tomcat/logs/
 
+            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_0/:/mnt/data_dir/
+            - /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_0/:/opt/config_dir/
+
         ports:
             - "8080:8080"
-
-        links:
-            - postgres
-
-        depends_on:
-            - postgres
-        
-        #restart: always
-    postgres:
-        #image: postgres:9.6
-        build:
-            context: ./postgis-docker
-            dockerfile: Dockerfile
-        container_name: saeon_postgres
-        ports:
-            - "5432:5432"
-
-        volumes:
-            - ./data/:/var/lib/postgresql/data
-            - /mnt/media/postgres_dump_app01/2019_MIGRATION/:/opt/
-            - ./utils/:/scripts/
+      
         #restart: always
 

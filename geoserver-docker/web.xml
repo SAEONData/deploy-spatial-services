@@ -52,7 +52,7 @@
     
     <context-param>
        <param-name>GEOSERVER_DATA_DIR</param-name>
-        <param-value>/opt/data_dir/</param-value>
+        <param-value>/opt/config_dir/</param-value>
     </context-param> 
    
     

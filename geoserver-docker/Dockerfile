@@ -20,7 +20,7 @@ RUN cd /tmp/gsplugs/ && ls
 RUN unzip /tmp/gsplugs/geoserver-$GS_VERSION-netcdf-plugin.zip -d /tmp/gs/warunpack/WEB-INF/lib/
 RUN unzip /tmp/gsplugs/geoserver-$GS_VERSION-wps-plugin.zip -d /tmp/gs/warunpack/WEB-INF/lib/
 
-#RUN ls
+RUN ls
 
 COPY web.xml  /tmp/gs/warunpack/WEB-INF/
 
@@ -31,6 +31,9 @@ RUN touch /usr/local/tomcat/webapps/tmp.txt
 RUN cp /tmp/gs/geoserver.repack.war /usr/local/tomcat/webapps/geoserver.war
 
 RUN apt-get install -y vim
+
+RUN mkdir /opt/config_dir/
+RUN mkdir /mnt/data_dir/
 
 #wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.10.1/extensions/geoserver-2.10.1-netcdf-plugin.zip
 #unzip geoserver-2.10.1-netcdf-plugin.zip -d webapps/geoserver/WEB-INF/lib/
