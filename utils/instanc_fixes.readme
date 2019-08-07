@@ -18,6 +18,17 @@ manually change the following <entry key="url">file:workspaces/CSAG_shp/CSAG</en
 Instance 2:
 bash utils/convert_file_paths.sh geoserver-data/data_dir/
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
+bash utils/convert_file_locations.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/
+manually edit below to point directly to workspace again
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/workspaces/BEEH_grid/hu10_sd_08c/coveragestore.xml 
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/workspaces/BEEH_grid/hu10_sd_09c/coveragestore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/workspaces/BEEH_grid/minrhsdev_d07/coveragestore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/workspaces/BEEH_shp/flow_ratio/datastore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/workspaces/BEEH_shp/streamflow_celrun/datastore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/workspaces/BGIS_Landcover/DC_SA_2011/datastore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_2/workspaces/CENSUS/WD_SA_2011/datastore.xml
+
+
 
 Instance 3:
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
