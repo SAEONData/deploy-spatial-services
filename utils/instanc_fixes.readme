@@ -1,11 +1,19 @@
 Instance 0:
 bash utils/convert_file_paths.sh geoserver-data/data_dir/
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
+bash utils/convert_file_locations.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_0/
+Manual fix after above:
+change back to <entry key="url">file:workspaces/DWA_shp/RQS</entry> in below
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_0/workspaces/DWA_shp/RQS/datastore.xml
+
 
 Instance 1:
 bash utils/convert_file_paths.sh geoserver-data/data_dir/
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
-bash utils/convert_filepaths_case.sh geoserver-data/data_dir/coverages/GEOSS
+bash utils/convert_filepaths_case.sh geoserver-data/data_dir/coverages/GEOSS  @note: do on linux fs, windows fs cant handle different cases
+bash utils/convert_file_locations.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_1/
+manually change the following <entry key="url">file:workspaces/CSAG_shp/CSAG</entry>
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_1/workspaces/CSAG_shp/CSAG/datastore.xml
 
 Instance 2:
 bash utils/convert_file_paths.sh geoserver-data/data_dir/
