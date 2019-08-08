@@ -45,3 +45,24 @@ http://192.168.110.101:8085/geoserver/BEA/wms?service=WMS&version=1.1.0&request=
 
 http://192.168.110.101:8085/geoserver/WP06/wms?service=WMS&version=1.1.0&request=GetMap&layers=WP06:MESO_SCN&styles=&bbox=16.451920000028533,-34.83416989569374,32.892531746697685,-22.125030000001036&width=768&height=593&srs=EPSG:4326&format=application/openlayers
 
+
+INST 6:
+Layer preview errors (works in app01)
+All Woody Biomass - BICGC (Catchments)	BEA:WP10_07_AWB_BIC_02_catch
+http://app01.saeon.ac.za:8086/geoserver/BEA/wms?service=WMS&version=1.1.0&request=GetMap&layers=BEA:WP10_07_AWB_BIC_02_catch&styles=&bbox=17.386870191252598,-34.83416989569374,32.892531746697685,-22.57108426430068&width=768&height=607&srs=EPSG:4326&format=application/openlayers
+
+
+All Woody Biomass - Co-Generation (Catchments)	BEA:WP10_07_AWB_COF_02_catch
+http://app01.saeon.ac.za:8086/geoserver/BEA/wms?service=WMS&version=1.1.0&request=GetMap&layers=BEA:WP10_07_AWB_COF_02_catch&styles=&bbox=17.84384018990175,-34.6343895339675,31.38441863502976,-23.460916381277315&width=768&height=633&srs=EPSG:4326&format=application/openlayers
+
+All Woody Biomass - Pelleting (Catchments)	BEA:WP10_07_AWB_NOT_02_catch
+http://app01.saeon.ac.za:8086/geoserver/BEA/wms?service=WMS&version=1.1.0&request=GetMap&layers=BEA:WP10_07_AWB_NOT_02_catch&styles=&bbox=17.386870191252598,-34.83416989569374,32.892531746697685,-22.57108426430068&width=768&height=607&srs=EPSG:4326&format=application/openlayers
+
+Mgobezeleni Catchment	GFW01:Catchment
+http://app01.saeon.ac.za:8086/geoserver/GFW01/wms?service=WMS&version=1.1.0&request=GetMap&layers=GFW01:Catchment&styles=&bbox=460131.2434735392,6936018.389851126,468718.1078919797,6965095.967677624&width=330&height=768&srs=EPSG:4326&format=application/openlayers
+
+District_Municipalities_2016	MDB:District_Municipalities_201
+http://app01.saeon.ac.za:8086/geoserver/MDB/wms?service=WMS&version=1.1.0&request=GetMap&layers=MDB:District_Municipalities_2016&styles=&bbox=16.45189000000005,-34.83417000299994,32.944984945000044,-22.125030057999936&width=768&height=591&srs=EPSG:4326&format=application/openlayers
+
+Local_Municipalities_2016	MDB:Local_Municipalities_2016
+http://app01.saeon.ac.za:8086/geoserver/MDB/wms?service=WMS&version=1.1.0&request=GetMap&layers=MDB:Local_Municipalities_2016&styles=&bbox=16.45189000000005,-34.83417000299994,32.944984945000044,-22.125030057999936&width=768&height=591&srs=EPSG:4326&format=application/openlayers
