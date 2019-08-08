@@ -78,6 +78,8 @@ Manual namespace fix as below:
 Instance 7:
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
 bash utils/fix_instance_7.sh geoserver-data/data_dir/
+bash utils/convert_file_locations.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_7/
+
 
 Instance 8:
 empty?
