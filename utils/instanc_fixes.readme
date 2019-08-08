@@ -45,8 +45,15 @@ Instance 5:
 bash utils/convert_file_paths.sh geoserver-data/data_dir/
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
 bash utils/fix_instance_5.sh geoserver-data/data_dir/
+bash utils/convert_file_locations.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_5/
+manually edit below to point directly to workspace again
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_5/workspaces/BEA_grid/landcover_wgs/datastore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_5/workspaces/BEA_shp/Census_2011/datastore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_5/workspaces/BEA_shp/MAIZE/datastore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_5/workspaces/BEA_shp/SUGARCANE/datastore.xml
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_5/workspaces/BGIS_Landcover/landcover22/datastore.xml
 
-Can this be removed? (windows snapshots?)
+This has been ignored: (windows snapshots?)
 362G	/mnt/media/geoservers_app01/Instance5Bkp/data_dir/dirisa
 
 
