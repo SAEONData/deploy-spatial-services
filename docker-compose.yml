@@ -164,3 +164,30 @@ services:
             - "8085:8080"
 
         #restart: always 
+
+    saeon_geoserver_6:
+        build:
+            context: ./geoserver-docker
+            dockerfile: Dockerfile
+
+        container_name: saeon_geoserver_6
+
+        environment:
+            - MINMEM=512M
+            - MAXMEM=2G
+
+        volumes:
+            #- ./webapps/:/usr/local/tomcat/webapps/
+            #- ./geoserver-data/:/opt/
+            #- /mnt/media/geoservers_app01/Instance5Bkp/:/opt/
+
+            - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
+            - ./geoserver-logs/:/usr/local/tomcat/logs/
+
+            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_6/:/mnt/data_dir/
+            - /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_6/:/opt/config_dir/
+
+        ports:
+            - "8086:8080"
+
+        #restart: always 
