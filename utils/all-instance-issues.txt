@@ -1,0 +1,29 @@
+INST 0:
+
+Layer preview errors:
+______________________
+
+Also don't work in http://app01.saeon.ac.za:8080/geoserver/
+http://192.168.110.101:8080/geoserver/DEM/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEM:GDEM-10km-colorized&styles=&bbox=-180.00416667,-89.99583332927999,179.99583332856,90.00416667&width=768&height=384&srs=EPSG:4326&format=application/openlayers
+
+http://192.168.110.101:8080/geoserver/DEA_CARBON/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_CARBON:SAR_75m_AboveGroundBiomassWoody_tonnes-ha_DEA_CSIR_1.1-2015-10-27&styles=&bbox=29.826684861739142,-26.07667477427618,32.225184942838624,-22.250242848906073&width=481&height=768&srs=EPSG:4326&format=application/openlayers
+
+http://192.168.110.101:8080/geoserver/GEO/wms?service=WMS&version=1.1.0&request=GetMap&layers=GEO:meso_prot_pr&styles=&bbox=-534343.547488,6122943.208128,1085975.487221,7546510.137031&width=768&height=674&srs=EPSG:4326&format=application/openlayers
+
+___________
+Log errors:
+___________
+java.io.FileNotFoundException: /opt/config_dir/mnt/data_dir/C:/inetpub/wwwroot/PLATFORM_TEST/MAP/uploads/wim/SHP/POW.shp (No such file or directory)
+/opt/config_dir/mnt/data_dir/C:/inetpub/wwwroot/PLATFORM_TEST/MAP/uploads/wim/SHP/POW.shp
+
+
+
+
+INST 1 - 2 - No issues
+
+INST 3:
+
+
+Layer preview doesn't work, however works on app01
+http://192.168.110.101:8083/geoserver/HEALTH/wms?service=WMS&version=1.1.0&request=GetMap&layers=HEALTH:CholeraCases&styles=&bbox=16.451910000000055,-34.83416999999997,32.944980000000044,-22.12502999999998&width=768&height=591&srs=EPSG:4326&format=application/openlayers
+
