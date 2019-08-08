@@ -69,6 +69,11 @@ comment out following in all results from above
     </style>
   </styles> -->
 
+Manually replace BEA namespace with MDB:
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_6/workspaces/MDB/2016_DISTRICT_MN/datastore.xml:    <entry key="namespace">BEA</entry>
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_6/workspaces/MDB/2016_LOCAL_MN/datastore.xml:    <entry key="namespace">BEA</entry>
+Manual namespace fix as below:
+/mnt/media2/geoservers_app01/restructured/geoserver-config/instance_6/workspaces/GFW01/Mgobezeleni Catchment/datastore.xml:    <entry key="namespace">http://GFW01</entry>
 
 Instance 7:
 bash utils/fix_instance_0.sh geoserver-data/data_dir/
