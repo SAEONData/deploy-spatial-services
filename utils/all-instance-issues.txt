@@ -35,3 +35,13 @@ http://192.168.110.101:8084/geoserver/DEA_Carbon/wms?service=WMS&version=1.1.0&r
 http://192.168.110.101:8084/geoserver/DEA_Carbon/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_Carbon:AboveGroundBiomassWoody_tDM_ha_DEA_CSIR_1.1.10-2015-10-09&styles=&bbox=-868958.792814054,-3864574.4240013864,803222.9240476162,-2429067.075315728&width=768&height=659&srs=EPSG:4326&format=application/openlayers
 
 http://192.168.110.101:8084/geoserver/DEA_CARBON_II/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_CARBON_II:LADA_South_Africa_Land_Use_DAFF_Apr2016&styles=&bbox=16.05480847174759,-34.877628162777484,33.49846888410278,-21.986412466542838&width=768&height=567&srs=EPSG:4326&format=application/openlayers
+
+INST 5:
+
+Layer preview errors:
+Also don't work in http://app01.saeon.ac.za:8085/geoserver/
+
+http://192.168.110.101:8085/geoserver/BEA/wms?service=WMS&version=1.1.0&request=GetMap&layers=BEA:Meso_pop_income_education_LL&styles=&bbox=16.451920000028533,-34.83416989569374,32.892531746697685,-22.125030000001036&width=768&height=593&srs=EPSG:4326&format=application/openlayers
+
+http://192.168.110.101:8085/geoserver/WP06/wms?service=WMS&version=1.1.0&request=GetMap&layers=WP06:MESO_SCN&styles=&bbox=16.451920000028533,-34.83416989569374,32.892531746697685,-22.125030000001036&width=768&height=593&srs=EPSG:4326&format=application/openlayers
+
