@@ -27,3 +27,11 @@ INST 3:
 Layer preview doesn't work, however works on app01
 http://192.168.110.101:8083/geoserver/HEALTH/wms?service=WMS&version=1.1.0&request=GetMap&layers=HEALTH:CholeraCases&styles=&bbox=16.451910000000055,-34.83416999999997,32.944980000000044,-22.12502999999998&width=768&height=591&srs=EPSG:4326&format=application/openlayers
 
+
+INST 4:
+layer preview errors (app01 however works)
+http://192.168.110.101:8084/geoserver/DEA_Carbon/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_Carbon:AboveGroundBiomassWoody_gC_sq.m_DEA_CSIR_1.1.9-2015-10-06&styles=&bbox=-868958.792814054,-3864574.4240013864,803222.9240476162,-2429067.075315728&width=768&height=659&srs=EPSG:4326&format=application/openlayers
+
+http://192.168.110.101:8084/geoserver/DEA_Carbon/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_Carbon:AboveGroundBiomassWoody_tDM_ha_DEA_CSIR_1.1.10-2015-10-09&styles=&bbox=-868958.792814054,-3864574.4240013864,803222.9240476162,-2429067.075315728&width=768&height=659&srs=EPSG:4326&format=application/openlayers
+
+http://192.168.110.101:8084/geoserver/DEA_CARBON_II/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_CARBON_II:LADA_South_Africa_Land_Use_DAFF_Apr2016&styles=&bbox=16.05480847174759,-34.877628162777484,33.49846888410278,-21.986412466542838&width=768&height=567&srs=EPSG:4326&format=application/openlayers
