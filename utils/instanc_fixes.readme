@@ -56,6 +56,18 @@ manually edit below to point directly to workspace again
 This has been ignored: (windows snapshots?)
 362G	/mnt/media/geoservers_app01/Instance5Bkp/data_dir/dirisa
 
+Instance 6:
+bash utils/fix_instance_0.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_6/
+bash utils/convert_file_locations.sh /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_6/
+grep -R "StyleInfoImpl-7e703c0f:154337e246f:-7fe7" workspaces`
+
+comment out following in all results from above
+
+  <!-- <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-7e703c0f:154337e246f:-7fe7</id>
+    </style>
+  </styles> -->
 
 
 Instance 7:
