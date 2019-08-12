@@ -2,8 +2,8 @@
 INPUT_DUMPS_DIR=/opt/2019/07/02
 POSTGIS_RESTORE=/usr/share/postgresql/9.5/contrib/postgis-2.3/postgis_restore.pl
 
-#for dump_file in `ls $INPUT_DUMPS_DIR/*.compressed`
-for dump_file in `ls $INPUT_DUMPS_DIR/-CFG.compressed`
+for dump_file in `ls $INPUT_DUMPS_DIR/*.compressed`
+#for dump_file in `ls $INPUT_DUMPS_DIR/-CFG.compressed`
 do
     db_name=$(basename $dump_file | cut -d '.' -f1 | cut -d '-' -f2)
     echo "creating $db_name" &>> /scripts/restore.log
