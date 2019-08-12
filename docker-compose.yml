@@ -11,7 +11,7 @@ services:
 
         volumes:
             - ./data/:/var/lib/postgresql/data
-            - /mnt/media/postgres_dump_app01/2019_MIGRATION/:/opt/
+            - /mnt/spatial-data/postgres-database-backups/:/opt/
             - ./utils/:/scripts/
         #restart: always
 
