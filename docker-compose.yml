@@ -19,7 +19,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_0/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_0/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_0/:/mnt/data_dir/
             - ./geoserver-config/instance_0/:/opt/config_dir/
 
         ports:
@@ -47,7 +47,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_1/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_1/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_1/:/mnt/data_dir/
             - ./geoserver-config/instance_1/:/opt/config_dir/
 
         ports:
@@ -74,7 +74,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_2/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_2/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_2/:/mnt/data_dir/
             - ./geoserver-config/instance_2/:/opt/config_dir/
 
         ports:
@@ -101,7 +101,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_3/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_3/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_3/:/mnt/data_dir/
             - ./geoserver-config/instance_3/:/opt/config_dir/
 
         ports:
@@ -129,7 +129,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_4/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_4/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_4/:/mnt/data_dir/
             - ./geoserver-config/instance_4/:/opt/config_dir/
 
         ports:
@@ -157,7 +157,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_5/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_5/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_5/:/mnt/data_dir/
             - ./geoserver-config/instance_5/:/opt/config_dir/
 
         ports:
@@ -184,7 +184,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_6/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_6/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_6/:/mnt/data_dir/
             - ./geoserver-config/instance_6/:/opt/config_dir/
 
         ports:
@@ -211,7 +211,7 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_7/:/usr/local/tomcat/logs/
 
-            - /mnt/media2/geoservers_app01/restructured/spatial-data/instance_7/:/mnt/data_dir/
+            - /mnt/spatial-data/spatial-data-instances/instance_7/:/mnt/data_dir/
             - ./geoserver-config/instance_7/:/opt/config_dir/
 
         ports:
