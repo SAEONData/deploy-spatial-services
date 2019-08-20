@@ -23,8 +23,8 @@
         <longProp name="ThreadGroup.start_time">1395336932000</longProp>
         <longProp name="ThreadGroup.end_time">1395336932000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">60</stringProp>
-        <stringProp name="ThreadGroup.delay">10</stringProp>
+	<stringProp name="ThreadGroup.duration">TEST_THREAD_DURATION</stringProp>
+        <stringProp name="ThreadGroup.delay">TEST_THREAD_DELAY</stringProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
@@ -38,11 +38,11 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">192.168.111.62</stringProp>
-          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.domain">TEST_HOST</stringProp>
+          <stringProp name="HTTPSampler.port">TEST_PORT</stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/geoserver/CONTEXT/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CONTEXT:bgis_river_cons_status_dd&amp;styles=&amp;bbox=16.4596939086914,-34.7700500488281,32.8702201843262,-22.1255836486816&amp;width=768&amp;height=591&amp;srs=EPSG:4326&amp;format=application/openlayers</stringProp>
+          <stringProp name="HTTPSampler.path">TEST_LAYER</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
