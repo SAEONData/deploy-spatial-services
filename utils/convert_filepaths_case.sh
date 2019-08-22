@@ -26,8 +26,8 @@ do
 done
 
 
-echo "removing $INPUT_DIR"
-rm -rf $INPUT_DIR
+#echo "removing $INPUT_DIR"
+#rm -rf $INPUT_DIR
 
 
 #$echo "GEOSS/SARVA/UGEP_dry.tif" | awk '{print tolower($0)}'i

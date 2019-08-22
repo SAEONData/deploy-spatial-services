@@ -11,7 +11,7 @@ http://192.168.110.101:8080/geoserver/DEA_CARBON/wms?service=WMS&version=1.1.0&r
 http://192.168.110.101:8080/geoserver/GEO/wms?service=WMS&version=1.1.0&request=GetMap&layers=GEO:meso_prot_pr&styles=&bbox=-534343.547488,6122943.208128,1085975.487221,7546510.137031&width=768&height=674&srs=EPSG:4326&format=application/openlayers
 
 layer rendering quality errors (looks much better on app01)
-http://spatialsv.saeon.int:8080/geoserver/DEA_CARBON/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_CARBON:SAR_75m_WoodyFractionalCover_percent_DEA_CSIR_1.1-2015-10-15&styles=&bbox=29.826684861739142,-26.07667477427618,32.225184942838624,-22.250242848906073&width=481&height=768&srs=EPSG:4326&format=image/png
+http://spatialsv.saeon.int:8080/geoserver/DEA_CARBON/wms?service=WMS&version=1.1.0&request=GetMap&layers=DEA_CARBON:SAR_75m_WoodyFractionalCover_percent_DEA_CSIR_1.1-2015-10-15&styles=&bbox=29.826684861739142,-26.07667477427618,32.225184942838624,-22.250242848906073&width=481&height=768&srs=EPSG:4326&format=image/pnGg
 
 
 ___________
@@ -52,3 +52,12 @@ http://192.168.110.101:8085/geoserver/WP06/wms?service=WMS&version=1.1.0&request
 
 INST 6:
 None
+
+
+INST 9:
+Server takes a long time to start on successive starts (lots of netcdfs_
+see below for suggested fixes (e.g. indexing netcdfs via database)
+
+https://docs.geoserver.org/stable/en/user/data/raster/imagemosaicjdbc.html
+http://docs.geotools.org/stable/userguide/library/coverage/jdbc/index.html
+https://sourceforge.net/p/geoserver/mailman/message/32479434/
