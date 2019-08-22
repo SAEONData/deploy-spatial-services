@@ -238,7 +238,8 @@ services:
             - ./geoserver-docker/setenv.sh:/usr/local/tomcat/bin/setenv.sh:ro
             - ./geoserver-logs/instance_9/:/usr/local/tomcat/logs/
 
-            - /mnt/spatial-data/spatial-data-instances/instance_9/:/mnt/data_dir/
+            #- /mnt/spatial-data/spatial-data-instances/instance_9/:/mnt/data_dir/
+            - ./spatial-data/instance_9/:/mnt/data_dir/
             #- /mnt/media2/geoservers_app01/restructured/spatial-data/instance_9/:/mnt/data_dir/
             - ./geoserver-config/instance_9/:/opt/config_dir/
             #- /mnt/media2/geoservers_app01/restructured/geoserver-config/instance_9/:/opt/config_dir/

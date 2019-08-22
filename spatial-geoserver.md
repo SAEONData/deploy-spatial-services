@@ -39,11 +39,12 @@ git clone  --single-branch --branch deploy-all-geoserver-instances https://githu
 2) Make local copy of geoserver configuration:
 mkdir ./geoserver-config/ && cp -r /mnt/spatial-data/geoserver-config-backups/2019-08-12/* ./geoserver-config/
 
+3) Only for instance 9; Make a local copy of its data (netCDF data: performance issues reading from windows network drive share)
 
-3) Build geoserver image
+4) Build geoserver image
 < deploy-all-geoserver-instances $> docker-compose build
 
-4) 
+5) 
 
 
 logs (separate logs per instance)
