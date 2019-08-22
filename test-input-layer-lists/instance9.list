@@ -1,0 +1,10 @@
+http://spatialsv.saeon.int:8090/geoserver/Africa_Political_boundaries/wms?service=WMS&version=1.1.0&request=GetMap&layers=Africa_Political_boundaries:Africa&styles=&bbox=-25.35875000001397,-46.97892929427326,51.4199999999837,37.34999999997672&width=699&height=768&srs=EPSG:4326&format=application/openlayers
+http://spatialsv.saeon.int:8090/geoserver/it.geosolutions/wms?service=WMS&version=1.1.0&request=GetMap&layers=it.geosolutions:tas%20-%20fig29c&styles=&bbox=12.979999824446075,-35.85999938419887,34.979998306352265,-20.019999776567733&width=768&height=552&srs=EPSG:4326&format=application/openlayers
+http://spatialsv.saeon.int:8090/geoserver/it.geosolutions/wms?service=WMS&version=1.1.0&request=GetMap&layers=it.geosolutions:pr%20-%20fig35cc&styles=&bbox=12.979999824446075,-35.85999938419887,34.979998306352265,-20.019999776567733&width=768&height=552&srs=EPSG:4326&format=application/openlayers
+http://spatialsv.saeon.int:8090/geoserver/it.geosolutions/wms?service=WMS&version=1.1.0&request=GetMap&layers=it.geosolutions:pr%20-%20fig4b&styles=&bbox=12.979999824446075,-35.85999938419887,34.979998306352265,-20.019999776567733&width=768&height=552&srs=EPSG:4326&format=application/openlayers
+http://spatialsv.saeon.int:8090/geoserver/it.geosolutions/wms?service=WMS&version=1.1.0&request=GetMap&layers=it.geosolutions:pr%20-%20fig40b&styles=&bbox=12.979999824446075,-35.85999938419887,34.979998306352265,-20.019999776567733&width=768&height=552&srs=EPSG:4326&format=application/openlayers
+http://spatialsv.saeon.int:8090/geoserver/it.geosolutions/wms?service=WMS&version=1.1.0&request=GetMap&layers=it.geosolutions:tas%20-%20fig9bb&styles=&bbox=12.979999824446075,-35.85999938419887,34.979998306352265,-20.019999776567733&width=768&height=552&srs=EPSG:4326&format=application/openlayers
+http://spatialsv.saeon.int:8090/geoserver/it.geosolutions/wms?service=WMS&version=1.1.0&request=GetMap&layers=it.geosolutions:tas%20-%20fig9b&styles=&bbox=12.979999824446075,-35.85999938419887,34.979998306352265,-20.019999776567733&width=768&height=552&srs=EPSG:4326&format=application/openlayers
+
+
+
