@@ -1,8 +1,8 @@
 LAYER_TEST_LIST=$1
 JMETER_BIN=~/workspace/jmeter/apache-jmeter-5.1.1/bin/jmeter
 JMETER_CONFIG=../jmeter-test-configs/geoserver-basic-new-8000_short.jmx
-NEW_HOST_URL=192.168.111.62
-#NEW_HOST_URL=app01.saeon.ac.za
+#NEW_HOST_URL=192.168.111.62
+NEW_HOST_URL=app01.saeon.ac.za
 OLD_HOST_URL=app01.saeon.ac.za
 
 TEST_THREAD_DELAY=10
